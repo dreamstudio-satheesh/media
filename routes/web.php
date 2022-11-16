@@ -43,11 +43,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/createbill', [App\Http\Controllers\BillController::class, 'index'])->name('createbill');
 Route::put('/updatebill', [App\Http\Controllers\BillController::class, 'update'])->name('updatebill');
 Route::get('/billstatus', [App\Http\Controllers\BillController::class, 'status'])->name('billstatus');
-Route::get('/managebill', [App\Http\Controllers\BillController::class, 'manage'])->name('managebill');
+Route::get('/billstatus/{bill}', [App\Http\Controllers\BillController::class, 'viewbill']);
 
-// theme routes
-Route::view('blank', 'webkit')->name('webkit');
-Route::view('mazer','mazer')->name('mazer');
+
+Route::get('/managebill', [App\Http\Controllers\BillController::class, 'manage'])->name('managebill');
+Route::get('/managebill/{bill}', [App\Http\Controllers\BillController::class, 'managebill']);
+
+
 
 
 Route::group([

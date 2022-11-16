@@ -35,6 +35,16 @@ class BillController extends Controller
         return view('bill.status', compact('bills'));
     }
 
+    public function managebill(Bill $bill)
+    {
+        return view('bill.show', compact('bill'));
+    }
+
+    public function viewbill(Bill $bill)
+    {
+        return view('bill.view', compact('bill'));
+    }
+
 
     public function manage()
     {

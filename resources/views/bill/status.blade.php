@@ -28,7 +28,7 @@
                                                 <tr>
                                                     <td class="text-bold-500">{{ $bill->bilnum }}</td>
                                                     <td>{{ $bill->status }}</td>                                                   
-                                                    <td><button type="submit" class="btn btn-primary me-1 mb-1"  data-bs-toggle="modal" data-bs-target="#primary">View</button></td>
+                                                    <td><a href="{{ url()->current() }}/{{ $bill->id }}" class="btn btn-primary me-1 mb-1" >View</a></td>
                                                 </tr>
                                                
                                                 @endforeach
