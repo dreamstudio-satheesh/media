@@ -28,13 +28,15 @@
                                                 <tr>
                                                     <td class="text-bold-500">{{ $bill->bilnum }}</td>
                                                     <td>{{ $bill->status }}</td>                                                   
-                                                    <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
+                                                    <td><button type="submit" class="btn btn-primary me-1 mb-1"  data-bs-toggle="modal" data-bs-target="#primary">View</button></td>
                                                 </tr>
                                                
                                                 @endforeach
                                              
                                             </tbody>
                                         </table>
+
+                                        
                                     </div>
                                 </div>
                             </div>
