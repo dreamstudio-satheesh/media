@@ -11,8 +11,8 @@
                 <div class="card-content">
                     <div class="card-body">
                        
-
                     <img src="{{ asset('storage/' . $bill->photo) }}" class="img-thumbnail" alt="bill">
+                    
                     </div>
                 
                     
